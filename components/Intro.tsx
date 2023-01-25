@@ -117,10 +117,10 @@ const Intro = () => {
         </div>
       </div>
       <div className="flex gap-3 flex-col">
-        <div className="text-white text-5xl text-center font-bold">
-          I`m Muhammed Erdem
+        <div className="text-white text-5xl  font-bold">
+          I`m  Mehmet Emin
         </div>
-        <div className="text-[rgb(54,91,254)] text-2xl">Front-end Engineer</div>
+        <div className="text-[rgb(54,91,254)] text-2xl">Front-end & Desktop Developer</div>
         <div className="text-gray-300 md:max-w-[35rem]  md:text-left text-center font-light text-xl leading-8">
           Specialized in front-end development but also like trying out other{" "}
           <br />
@@ -133,9 +133,7 @@ const Intro = () => {
           >
             KNOW ME
           </Link>
-          <Link href="" className="text-gray-300  text-xl">
-            Check My Resume
-          </Link>
+       
         </div>
       </div>
       <img
@@ -148,7 +146,7 @@ const Intro = () => {
         className="absolute w-1/2 top-[20rem] h-[30rem] z-50 md:flex hidden justify-center items-center right-0"
       >
         <img src={first.src} className="xl:w-[14rem] w-[17vw]" />
-        <div className="absolute flex-col hover:scale-125 duration-500 transition-transform h-[12rem] w-[15vw] xl:w-[12rem] flex items-center justify-center gap-5  top-8 left-32">
+        <div className="absolute flex-col hover:scale-125 duration-500 transition-transform h-[12rem] w-[15vw] xl:w-[12rem] flex items-center justify-center gap-5  top-8 left-16">
           <img src={webanimationIcon.src} className="w-12 z-50" />
           <div className="z-50 text-lg text-white font-bold max-w-[5rem] text-center">
             Web Animation

@@ -12,7 +12,20 @@
 }
 html {
   scroll-behavior: smooth !important;
+
 }
+html::-webkit-scrollbar{
+  background-color: transparent;
+  width: 0.3rem;
+  padding: 10px 0;
+  overflow-x: hidden;
+}
+
+html::-webkit-scrollbar-thumb{
+  border-radius: 10px;
+  background-color: rgb(201, 198, 198);
+}
+
 .carousel .slider-wrapper.axis-vertical {
   height: 10rem !important;
 }

@@ -47,7 +47,7 @@ const RedditTextField = styled((props: TextFieldProps) => (
   },
 }));
 const Contact = () => {
-  const [copied, copy, setCopied] = useCopy("muhammed@erdem.dev");
+  const [copied, copy, setCopied] = useCopy("mehmet@emin");
   const copyText = () => {
     copy();
     setTimeout(() => {
@@ -70,15 +70,7 @@ const Contact = () => {
       link: "instagram.com/muhammed",
     },
     {
-      provider: "Twitter",
-      link: "instagram.com/muhammed",
-    },
-    {
-      provider: "Linkedin",
-      link: "instagram.com/muhammed",
-    },
-    {
-      provider: "Behance",
+      provider: "Discord",
       link: "instagram.com/muhammed",
     },
   ];
@@ -106,12 +98,11 @@ const Contact = () => {
   };
   const submit = async (e: any) => {
     e.preventDefault();
-    if (validate(values).length > 0) {
-      setErrors(validate(values));
-      return;
-    } else {
+    try {
       const response = await axios.post("/api/hello", values);
       alert("Message sent successfully");
+    } catch (_error) {
+      alert("Message not sent");
     }
   };
   const [errors, setErrors] = useState<{ name: string; error: string }[]>([]);
@@ -121,7 +112,7 @@ const Contact = () => {
       id="contact"
       className="bg-[rgb(35,40,54)] pt-[15rem] w-full pb-10 mt-[10rem]"
     >
-      <div className="max-w-[100rem] relative sm:px-20 flex flex-col gap-16 mx-auto">
+      <div className="max-w-[100rem] relative sm:px-32 flex flex-col gap-16 mx-auto">
         <div className="absolute -top-[22rem] left-[4%] right-[1%] flex sm:flex-row flex-col items-center justify-center sm:gap-0 gap-5 sm:justify-between px-10 w-[87%] rounded-tl-[40px] rounded-br-[40px] h-[15rem]">
           <div className="flex pl-10 z-50 gap-3 flex-col">
             <div className="text-white font-bold text-3xl">
@@ -276,7 +267,7 @@ const Contact = () => {
                 <img src={Copy.src} className="w-7" />
               </div>
               <div className="text-center w-full font-bold text-lg">
-                {copied ? "copied" : "muhammed@erdem.dev"}
+                {copied ? "copied" : "mehmet@emin"}
               </div>
             </div>
           </div>

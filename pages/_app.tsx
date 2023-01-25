@@ -43,7 +43,7 @@ export default function App({ Component, pageProps }: AppProps) {
       ) : (
         <>
           <div className="min-h-screen overflow-x-hidden">
-            <div className=" max-w-[90rem] mx-auto px-5 xl:px-20">
+            <div className=" max-w-[90rem] mx-auto px-5 xl:px-32">
               <Navigation />
               <Component {...pageProps} />
             </div>

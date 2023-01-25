@@ -1,11 +1,12 @@
-import Footer from "@/components/Footer";
-import Navigation from "@/components/Navigation";
 import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
   return (
     <Html lang="en">
-      <Head />
+      <Head>
+        <link rel="shortcut icon" href="./favicond.png" type="image/x-icon" />
+        <title>Mehmet Emin</title>
+      </Head>
       <body>
         <NextScript />
         <Main />

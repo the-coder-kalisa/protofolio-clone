@@ -2,7 +2,7 @@ import { Menu } from "@mui/icons-material";
 import Link from "next/link";
 import Logo from "./fullLogo";
 
-export const navs = ["Home", "About", "Works", "Kitchen", "Contact"];
+export const navs = ["Home", "About", "Works", "Contact"];
 const Navigation = () => {
   return (
     <div className="w-full flex items-center xl:pt-14 pt-5 justify-between">
@@ -23,18 +23,9 @@ const Navigation = () => {
                 : "/"
             }`}
             key={index}
-            className={`uppercase ${
-              index === 3
-                ? " opacity-50 cursor-not-allowed relative"
-                : "cursor-pointer"
-            }`}
+            className={`uppercase cursor-pointer`}
           >
             <span> {nav}</span>
-            {index === 3 && (
-              <div className="absolute text-xs top-[-1.5rem] -right-6  px-2 py-1 rounded-tl-md rounded-br-md bg-[rgb(55,91,254)]">
-                SOON
-              </div>
-            )}
           </Link>
         ))}
       </div>

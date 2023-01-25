@@ -7,13 +7,13 @@ import { GiPersonInBed } from "react-icons/gi";
 import { BsImage, BsSnow3 } from "react-icons/bs";
 
 const About = () => {
-  const skills = ["React", "Vue", "React Native", "CSS3"];
+  const skills = ["ElectonJS", "React", "Vue", "CSS3", "TailwindCSS", "NextJS", "Laravel"];
   return (
     <div
       id="about"
-      className="flex pt-[25rem] pb-[5rem] md:gap-10 md:flex-row flex-col items-center  relative justify-between"
+      className="flex pt-[25rem] pb-[5rem] md:gap-20 md:flex-row flex-col items-center  relative justify-between"
     >
-      <div className="w-[28rem] relative">
+      <div className="w-[38rem] relative">
         <div className="md:hidden flex absolute -top-24 md:items-start items-center md:w-auto w-full gap-2 flex-col">
           <div className="text-[rgb(54,91,254)] greeting text-2xl">Know Me</div>
           <div className="font-bold text-5xl text-white">About</div>

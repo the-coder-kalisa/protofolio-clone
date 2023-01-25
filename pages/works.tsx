@@ -15,41 +15,6 @@ const Works = () => {
             desc: "Pixelate Creative",
             cover: work1.src,
           },
-          {
-            year: 2021,
-            desc: "Fabrikod",
-            name: "IDDEF",
-            work: "mobile developer",
-            cover: work2.src,
-          },
-          {
-            year: 2019,
-            name: "Remizihoca Platform",
-            work: "fron-tend developer",
-            desc: "Pixelate Creative",
-            cover: work1.src,
-          },
-          {
-            year: 2021,
-            desc: "Fabrikod",
-            name: "IDDEF",
-            work: "mobile developer",
-            cover: work2.src,
-          },
-          {
-            year: 2019,
-            name: "Remizihoca Platform",
-            work: "fron-tend developer",
-            desc: "Pixelate Creative",
-            cover: work1.src,
-          },
-          {
-            year: 2021,
-            desc: "Fabrikod",
-            name: "IDDEF",
-            work: "mobile developer",
-            cover: work2.src,
-          },
         ]}
       />
     </div>

@@ -14,13 +14,6 @@ const WorksComponent: NextPage<{ works?: any[]; sent: boolean }> = ({
       desc: "Pixelate Creative",
       cover: work1.src,
     },
-    {
-      year: 2021,
-      desc: "Fabrikod",
-      name: "IDDEF",
-      work: "mobile developer",
-      cover: work2.src,
-    },
   ],
 }) => {
   return (
@@ -30,12 +23,12 @@ const WorksComponent: NextPage<{ works?: any[]; sent: boolean }> = ({
           Fantastic
         </div>
         <div className="font-bold text-5xl text-white">Selected Works</div>
-        <div className="w-full items-center gap-0 xl:gap-[10rem] grid grid-cols-1 sm:grid-cols-2">
+        <div className="w-full items-center gap-0 justify-center xl:gap-[10rem] flex">
           {works.map((work, index) => (
             <Link
             href="/"
               key={index}
-              className={`bg-[rgb(33,39,55)] group relative xl:h-[22rem] sm:h-[35vw] p-10 rounded-tl-[30px] rounded-br-[30px] sm:max-w-auto  max-w-[35rem] sm:w-[45vw] ${index % 2 !== 0 ? "hover:bg-[#009971]" : "hover:bg-[#4445A1]"}`}
+              className={`bg-[rgb(33,39,55)] group relative xl:h-[22rem] sm:h-[35vw] p-10 rounded-tl-[30px] rounded-br-[30px] max-w-auto  max-w-[35rem] sm:w-[45vw] ${index % 2 !== 0 ? "hover:bg-[#009971]" : "hover:bg-[#4445A1]"}`}
             >
               <div className="flex gap-5 relative flex-col">
                 <div className="flex justify-between">
@@ -64,26 +57,7 @@ const WorksComponent: NextPage<{ works?: any[]; sent: boolean }> = ({
           ))}
         </div>
       </div>
-      {!sent && (
-        <Link href="/works" className="sm:mt-[14rem]  hover:scale-110 transition-transform duration-700 mt-[5rem]">
-          <Button
-            style={{
-              background: "rgb(31,98,250)",
-              color: "white",
-              borderTopLeftRadius: 16,
-              borderTopRightRadius: 0,
-              borderBottomLeftRadius: 0,
-              borderBottomRightRadius: 16,
-              padding: "10px 25px",
-              fontSize: 17,
-            }}
-            variant="contained"
-            className="border-tl-[16px] border-br-[16px] "
-          >
-            SEE MORE
-          </Button>
-        </Link>
-      )}
+     
       <div className="text-[rgb(57,63,79)] greeting text-6xl mt-[8rem]">
         ”Be who you needed when you were younger”
       </div>
